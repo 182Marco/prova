@@ -83,7 +83,7 @@ section:first-of-type {
 
 /* navbar */
 
-img[src='./img/logo.png'] {
+img[src*='.png'] {
   margin-bottom: 1vh;
 }
 
