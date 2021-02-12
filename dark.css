@@ -102,11 +102,6 @@ section:first-of-type {
 
 /* navbar */
 
-img[src*='.png'] {
-  margin-bottom: 1vh;
-  width: 140px;
-}
-
 li {
   list-style: none;
   display: inline-block;
