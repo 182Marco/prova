@@ -1,24 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
 
 /* tutte cose */
 
 * {
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Balsamiq Sans', cursive;
-}
-
-img {
-  border-radius: 10px;
+  color: #858585;
 }
 
 /* utilities */
 
 .cont {
-  width: 82.5%;
+  width: 90.5%;
   margin: 0 auto;
   margin-bottom: 1vh;
 }
@@ -32,21 +27,33 @@ img {
   clear: both;
 }
 
+.layer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.rad {
+  border-radius: 10px;
+}
+
 /*macro-sezioni*/
 
 header {
-  height: 60vh;
+  height: 63vh;
   position: relative;
+  background-image: url(./img/banner.jpg);
+  background-position: center;
 }
 
 main {
-  height: 82vh;
   padding-bottom: 1%;
 }
 
 footer {
-  height: 5vh;
+  height: 8vh;
   margin: 0 auto;
+  padding: 2vh 0;
 }
 
 /* micro-sezioni */
@@ -81,10 +88,10 @@ section:first-of-type {
 
 img[src*='.png'] {
   margin-bottom: 1vh;
+  width: 140px;
 }
 
 li {
-  font-family: 'Noto Sans KR', sans-serif;
   list-style: none;
   display: inline-block;
   margin-left: 0.6vw;
@@ -96,52 +103,69 @@ li:first-child {
   margin-left: 0;
 }
 
-/* header */
-
-header > img {
-  height: 60vh;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
+a {
+  font-weight: 300;
+  text-decoration: none;
 }
+
+/* header */
 
 .text-in-img {
   position: absolute;
-  bottom: 0;
-  left: 5%;
-  color: white;
+  bottom: 11%;
+  left: 4%;
   width: 50%;
-  height: 50%;
 }
 
 .text-in-img > h2 {
-  font-size: 1.4rem;
   line-height: 27px;
+  color: #fff;
 }
 
 .text-in-img > p {
   margin-top: 1vh;
+  color: #fff;
 }
 
 /* main */
+
+section:first-child {
+  height: 13vh;
+}
 
 .title-cont {
   position: absolute;
   top: 50%;
   left: 0;
   transform: translate(0, -50%);
-  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.box-img {
+  height: 28vh;
+  width: 100%;
+  background-image: url(./img/img-1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.middle > .box-img {
+  background-image: url(./img/img-2.jpg);
+
+  background-size: cover;
+}
+
+.last > .box-img {
+  background-image: url(./img/img-3.jpg);
 }
 
 h1 {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 600;
   font-size: 1.5rem;
+  color: black;
 }
 
-.title-cont > p {
-  font-family: 'Noto Sans KR', sans-serif;
+h4 {
+  color: black;
 }
 
 section > img {
@@ -151,6 +175,8 @@ section > img {
 section > h4 {
   margin: 1.5vh 0;
 }
+
+/* footer */
 
 footer > p {
   text-align: center;
