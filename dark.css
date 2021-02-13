@@ -47,7 +47,6 @@ img[src$='.png'] {
 nav::before {
   content: '';
   display: block;
-  width: 170px;
   height: 60px;
   background-image: url('./img/logo-dark.png');
   background-size: contain;
